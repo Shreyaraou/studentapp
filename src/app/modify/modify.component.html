@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header"><div class="row">
+                <div class="col-md-6"> modify details </div>
+                <div class="col-md-6" style="text-align: right;"> <a routerLink="/viewall" >back</a></div>
+
+            </div></div>
+            <div class="card-body">
+                <form #modstud="ngForm" (ngSubmit)="updatestud()" >
+                    <label>id</label>
+                    <input type="text" [(ngModel)]="stud.id" name="stdid" class="form-control" disabled>
+                    <label>student name</label>
+                    <input type="text" [(ngModel)]="stud.name" name="stdname" class="form-control">
+                    <label>course</label>
+                    <input type="text" [(ngModel)]="stud.course" name="stdcourse" class="form-control">
+                    <label>grade</label>
+                    <input type="text" [(ngModel)]="stud.grade" name="stdgrade" class="form-control">
+                    <label>email</label>
+                    <input type="text" [(ngModel)]="stud.email" name="stdemail" class="form-control">
+                    <label>password</label>
+                    <input type="text" [(ngModel)]="stud.grade" name="stdpwd" class="form-control">
+                    <br>
+                    <input type="submit" value="update details" class="btn btn-success">
+                </form>
+               
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

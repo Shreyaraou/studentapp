@@ -1,0 +1,36 @@
+{
+  "student": [
+    {
+      "id": "101",
+      "name": "Tina",
+      "course": "JAVA",
+      "grade": "A",
+      "email": "tina@gmail.com",
+      "password": "1234@tina"
+    },
+    {
+      "id": "103",
+      "name": "Shayana",
+      "course": "PYTHON",
+      "grade": "A",
+      "email": "syna@gmail.com",
+      "password": "1234@syna"
+    },
+    {
+      "id": "105",
+      "name": "vivek",
+      "course": "PYTHON",
+      "grade": "B",
+      "email": "vivek@gmail.com",
+      "password": "1234@vivek"
+    },
+    {
+      "id": "6",
+      "name": "ciya",
+      "course": "JAVA",
+      "grade": "B",
+      "email": "ciya@gmail.com",
+      "password": "234@ciya"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header"> New Student </div>
+            <div class="card-body">
+                <form #regstud="ngForm" (ngSubmit)="StudentSaving()">
+                    <label>id</label>
+                    <input type="text" [(ngModel)]="stud.id" name="stdid" class="form-control">
+                    <label>student name</label>
+                    <input type="text" [(ngModel)]="stud.name" name="stdname" class="form-control">
+                    <label>course</label>
+                    <input type="text" [(ngModel)]="stud.course" name="stdcourse" class="form-control">
+                    <label>grade</label>
+                    <input type="text" [(ngModel)]="stud.grade" name="stdgrade" class="form-control">
+                    <label>email</label>
+                    <input type="text" [(ngModel)]="stud.email" name="stdemail" class="form-control">
+                    <label >password</label>
+                    <input type="text" [(ngModel)]="stud.password" name="stdpwd" class="form-control">
+                    <br>
+                    <input type="submit" value="save details" class="btn btn-success">
+                </form>
+                <div [innerHTML]="msg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

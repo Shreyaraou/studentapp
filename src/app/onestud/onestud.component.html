@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">   student details </div>
+                    <div class="col-md-6" style="text-align: right;"> 
+                        <a routerLink="/viewall">back</a> </div>
+                </div>
+               
+            </div>
+            <div class="card-body">
+            <table class="table table-stripped">
+                <tr>
+                    <th>student id </th>
+                    <th> name</th>
+                    <th>opted course</th>
+                    <th> obtained grade</th>
+                 
+                     <th>email</th>
+                     <th>password</th>
+                </tr>
+                <tr >
+                    <td > {{ stud.id}}</td>
+                    <td >{{stud.name}} </td>
+                    <td >{{stud.course}} </td>
+                    <td > {{stud.grade}}</td>
+                    <td>{{stud.email}}</td>
+                    <td>{{stud.password}}</td>
+                    <td><input type="button" value="delete" class="btn btn-danger" (click)=" delstud(stud.id)"></td>
+                </tr>
+            </table>
+               
+              
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+

@@ -1,0 +1,43 @@
+<div class="row">
+    
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">  all student details </div>
+                    <div class="col-md-6" style="text-align: right;"> 
+                        <a routerLink="/addstud">add new student</a> </div>
+                </div>
+               
+            </div>
+            <div class="container mt-5">
+            <div class="card-body">
+            <table class="table  table-striped-columns">
+                <thead class="table-light">
+                <tr >
+                    <th>student id </th>
+                    <th> name</th>
+                    <th>opted course</th>
+                    <th> obtained grade</th>
+                    <th> operations</th>
+                </tr>
+            </thead>
+                <tr *ngFor="let stud of allstud">
+                    <td > {{ stud.id}}</td>
+                    <td >{{stud.name}} </td>
+                    <td >{{stud.course}} </td>
+                    <td > {{stud.grade}}</td>
+                    <td><input type="button" value="veiw" class="btn btn-info" (click)="getonestud(stud.id)"></td>
+                    <td><input type="button" value="edit info" class="btn btn-success" (click)="getmodstud(stud.id)" ></td>
+                    
+
+                </tr>
+            </table>
+               
+              
+            </div>
+        </div>
+        </div>
+    </div>
+   
+</div>
